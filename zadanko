@@ -1,0 +1,10 @@
+form dodajacy do tablicy imie miasto wiek i 2 form wyszukuje ludzi z danego miasta
+odwolac sie do obiektu jego wlasciwosci city
+formularz
+3 pola - pole do imienia
+pole do miasta
+pole do wieku
+
+czy np imie zawiera znaki
+wszystkie miasta co koncza sie na ice
+albo wszycy ludzie ktorzy maja iles tam lat 
