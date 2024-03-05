@@ -13,16 +13,41 @@
             <label for="imie">Imię: <input type="text" placeholder="Podaj imię" id="imie"></label><br>
             <label for="wiek">Wiek: <input type="number" placeholder="Podaj wiek" id="wiek"></label><br>
             <label for="miasto">Miasto: <input type="text" placeholder="Podaj miasto" id="miasto"></label><br>
-
-            <input type="submit" value="potwierdź" id="przycisk">
+            <input type="submit" value="Potwierdź" id="przycisk">
         </fieldset>
 
-
-
-
-
     </form>
+    <form action="#">
+        <fieldset>
+            <legend>
+                Przyciski
+            </legend>
+            <input type="submit" value=" Miasto kończące się na 'ice' " id="ice">
+            <input type="submit" value="Ludzie powyżej 18 lat" id="lat">
+            <input type="submit" value="Imiona, które mają w sobie literę 'e'" id="e">
+        </fieldset>
+
+</form>
+
 <script>
+const tablicaob = [
+    { nazwa: "Jan", miasto: "Gdynia", wiek: 33 },
+    { nazwa: "Katarzyna", miasto: "Olsztyn", wiek: 29 },
+    { nazwa: "Tadeusz", miasto: "Sopot", wiek: 45 },
+    { nazwa: "Ewelina", miasto: "Elbląg", wiek: 27 },
+    { nazwa: "Wojciech", miasto: "Toruń", wiek: 36 },
+    { nazwa: "Małgorzata", miasto: "Kielce", wiek: 31 },
+    { nazwa: "Adam", miasto: "Radom", wiek: 40 },
+    { nazwa: "Aleksandra", miasto: "Opole", wiek: 28 },
+    { nazwa: "Robert", miasto: "Rybnik", wiek: 34 },
+    { nazwa: "Dominika", miasto: "Bielsko-Biała", wiek: 39 },
+    { nazwa: "Tomasz", miasto: "Częstochowa", wiek: 26 },
+    { nazwa: "Justyna", miasto: "Ruda Śląska", wiek: 32 },
+    { nazwa: "Michał", miasto: "Dąbrowa Górnicza", wiek: 28 },
+    { nazwa: "Magdalena", miasto: "Zabrze", wiek: 35 },
+    { nazwa: "Piotr", miasto: "Bytom", wiek: 37 }
+];
+
 const przycisk=document.querySelector('#przycisk');
 przycisk.addEventListener(`click`, evt=>{
 evt.preventDefault()
@@ -36,7 +61,7 @@ const dane={
 
 }
 
-
+tablicaob.push(dane)
 })
 
 
