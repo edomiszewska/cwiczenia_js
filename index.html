@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>cwiczenia</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>
+                Formularz
+            </legend>
+            <label for="imie">Imię: <input type="text" placeholder="Podaj imię" id="imie"></label><br>
+            <label for="wiek">Wiek: <input type="number" placeholder="Podaj wiek" id="wiek"></label><br>
+            <label for="miasto">Miasto: <input type="text" placeholder="Podaj miasto" id="miasto"></label><br>
+
+            <input type="submit" value="potwierdź" id="przycisk">
+        </fieldset>
+
+
+
+
+
+    </form>
+<script>
+const przycisk=document.querySelector('#przycisk');
+przycisk.addEventListener(`click`, evt=>{
+evt.preventDefault()
+const imie1=document.querySelector('#imie')
+const wiek1=document.querySelector('#wiek')
+const miasto1=document.querySelector('#miasto')
+const dane={
+    imie:imie1,
+    wiek:wiek1,
+    miasto:miasto1
+
+}
+
+
+})
+
+
+
+
+</script>
+
+
+</body>
+</html>
